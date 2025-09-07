@@ -6,7 +6,7 @@ import { fileURLToPath } from "url";
 import bcrypt from "bcrypt"
 import jwt from "jsonwebtoken"
 import dotenv from 'dotenv';
-// import cors from 'cors';
+import cors from 'cors';
 import fs from "fs";
 
 
@@ -18,7 +18,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
-// app.use(cors());
+app.use(cors());
 app.use(express.json());
 
 const configDir = path.join(__dirname, "config");
