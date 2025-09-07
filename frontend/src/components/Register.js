@@ -19,7 +19,7 @@ const Register = () => {
         try {
             setLoading(true)
             const userData = { username, password }
-            const url = " https://login-logout-wdyh.onrender.com/register"
+            const url = "https://login-logout-wdyh.onrender.com/register"
             const response = await axios.post(url, userData, {
                 headers: {
                     "Content-Type": "application/json"
